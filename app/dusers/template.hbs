@@ -1,0 +1,10 @@
+<table border="0" cellpadding="0" cellspacing="20" width="100%" >
+    <tr style="vertical-align: top">
+        <td width="400">
+{{#each model as |item|}}
+<p>{{#link-to 'dusers.duser' item.id}}#{{item.id}} - {{item.name}} ({{item.website}}){{/link-to}}</p>
+{{/each}}
+        </td>
+        <td>{{outlet}}</td>
+    </tr>
+</table>

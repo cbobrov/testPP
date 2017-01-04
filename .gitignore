@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # See https://help.github.com/ignore-files/ for more about ignoring files.
+=======
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+>>>>>>> cf43bb3632a93ad9637dd52428161c35fa73dd0f
 
 # compiled output
 /dist
@@ -13,5 +17,9 @@
 /connect.lock
 /coverage/*
 /libpeerconnection.log
+<<<<<<< HEAD
 npm-debug.log*
+=======
+npm-debug.log
+>>>>>>> cf43bb3632a93ad9637dd52428161c35fa73dd0f
 testem.log

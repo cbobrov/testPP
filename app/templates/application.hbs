@@ -1,0 +1,22 @@
+<div>
+ <label>Name:</label>
+ {{input type="text" value=name placeholder="Enter your name"}}
+</div>
+
+<div class="text">
+ <h3>My name is " {{name}} " and I want to learn Ember!</h3>
+</div>
+<table>
+    <th>
+        <td>{{#link-to 'index'}} <b>/ Home /</b> {{/link-to}} </td>
+        <td>{{#link-to 'users'}} <b>/ Static Users list /</b> {{/link-to}} </td>
+        <td>{{#link-to 'dusers'}} <b>/ Dinamic Users list /</b> {{/link-to}} </td>
+    </th>
+</table>
+<br/>
+<hr align="right" width="100%" size="1" color="#0000dd" />
+
+    {{outlet}}
+
+{{!--{{#link-to 'users'}} <b>Users list: </b> {{/link-to}}
+{{outlet}} --}} 

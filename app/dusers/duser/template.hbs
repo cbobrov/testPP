@@ -1,0 +1,47 @@
+<h2>User #{{model.id}} Page </h2>
+
+<h3> - {{model.name}}</h3>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" >
+    <tr style="vertical-align: top">
+        <td width="200"><b>User Name</b></td>
+        <td>- {{model.username}}</td>
+    </tr>
+    <tr style="vertical-align: top">
+        <td ><b>Address</b></td>
+        <td>- {{model.address.city}}, {{model.address.street}}, {{model.address.suite}}</td>
+    </tr>
+     <tr style="vertical-align: top">
+        <td ><b>Phone</b></td>
+        <td>- {{model.phone}}</td>
+    </tr>
+     <tr style="vertical-align: top">
+        <td ><b>Emale</b></td>
+        <td>- {{model.email}}</td>
+    </tr>
+     <tr style="vertical-align: top">
+        <td ><b>Website</b></td>
+        <td>- {{model.website}}</td>
+    </tr>
+     <tr style="vertical-align: top">
+        <td ><b>Company Name</b></td>
+        <td>- {{model.company.name}}</td>
+    </tr>
+     <tr style="vertical-align: top">
+        <td ><b>Catch Phrase</b></td>
+        <td>- {{model.company.catchPhrase}}</td>
+    </tr>
+</table>
+
+{{!--<ul>
+    <li><b>User Name</b> - {{model.username}}</li>
+    <li><b>Address</b> - {{model.address.city}}, {{model.address.street}}, {{model.address.suite}}</li>
+    <li><b>Phone</b> - {{model.phone}}</li>
+    <li><b>Emale</b> - {{model.email}}</li>
+    <li><b>Website</b> - {{model.website}}</li>
+    <li><b>Company Name</b> - {{model.company.name}}</li>
+    <li><b>Catch Phrase</b> - {{model.company.catchPhrase}}</li>
+
+</ul>--}}
+
+{{outlet}} 

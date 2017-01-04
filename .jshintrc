@@ -27,6 +27,10 @@
   "strict": false,
   "white": false,
   "eqnull": true,
+<<<<<<< HEAD
   "esversion": 6,
+=======
+  "esnext": true,
+>>>>>>> cf43bb3632a93ad9637dd52428161c35fa73dd0f
   "unused": true
 }

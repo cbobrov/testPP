@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('dusers', function() {
     this.route('duser', { path: '/user/:duser_id' });
   });
+  this.route('posts');
 });
 
 export default Router;

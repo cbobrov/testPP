@@ -1,2 +1,11 @@
-Posts
 {{outlet}}
+<p><h4> Posts list </h4></p>
+
+<ul>
+{{#each model as |item|}}  
+   <li><span class="glyphicon glyphicon-file"></span> Post # {{item.id}} - Post Title - {{item.title}} // (Post Body - {{item.body}})</li>
+   
+{{/each}}
+ 
+</ul> 
+

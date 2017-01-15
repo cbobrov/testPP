@@ -19,6 +19,37 @@ export default Ember.Route.extend({
     }
 });  
 
+/*
+allposts.forEach((ppp) => ppp.uuu = allusers.findBy('id', ppp.userId))
+// ------
+allposts.forEach(function(ppp) {
+    return ppp.uuu = allusers.findBy('id', ppp.userId);
+})
+
+// ---
+var user = allusers.findBy('id', ppp.userId);
+
+
+// {
+//     id: 23,
+//     title: "Some title",
+//     text: "Some text here",
+//     userId: 1,
+
+//     uuu: {
+//         id: 1,
+//         name: 'Some User name',
+//         email: 'mail@user.com'
+//     }
+// }
+
+// post.uuu.email
+
+
+return ppp.uuu = user;
+*/
+
+
   // let filteredPosts = allposts.filter((item, index) => index < 20);
   //return (filteredPosts); 
 

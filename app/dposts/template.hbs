@@ -1,0 +1,22 @@
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    {{#each model as |item|}}
+
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a {{action "getTitleID" item.id}} data-toggle="collapse" data-parent="#accordion" href="#{{item.id}}">
+          <p><span class="glyphicon glyphicon-book"></span> #{{item.id}} - {{item.title}}</p>
+        </a>
+      </h4>
+    </div>
+
+    <div id="{{item.id}}" class="panel-collapse collapse">
+      <div class="panel-body">
+        <p>- - -</p>
+      </div>
+    </div>
+
+    {{/each}}
+  </div>
+</div>
+{{outlet}}
